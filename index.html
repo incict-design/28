@@ -81,7 +81,7 @@ header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
 
 <!-- --- おみくじ --- -->
 <div class="date-buttons">
-  <button class="omikuji-button fancy-btn fancy-gold" onclick="drawOmikuji()">🎯 おみくじ 1日2回</button>
+  <button class="omikuji-button fancy-btn fancy-gold" onclick="drawOmikuji()">🎯 おみくじ</button>
 </div>
 <div id="omikujiResult" class="omikuji-result"></div>
 
@@ -146,12 +146,12 @@ const scheduleData = {
 };
 
 const omikujiResults = [
-  {name:'大狂',text:'隕石注意'},
+  {name:'大狂',text:'ウミガメに膝カックンされる'},
   {name:'凶',text:'水鉄砲で撃たれる'},
-  {name:'吉',text:'常北ファームで愛のささやき'},
-  {name:'小吉',text:'脳筋大爆発！'},
-  {name:'中吉',text:'脳みそ絶対零度'},
-  {name:'大吉',text:'正義の味方になれる'}
+  {name:'吉',text:'脳みそ絶対零度'},
+  {name:'小吉',text:'赤津先生と睨めっこ'},
+  {name:'中吉',text:'こんにちは、名桜大学'},
+  {name:'大吉',text:'待ってろよ！琉球大学'}
 ];
 
 function getTodayKey(){ const t=new Date(); return t.getFullYear()+"-"+(t.getMonth()+1)+"-"+t.getDate(); }
